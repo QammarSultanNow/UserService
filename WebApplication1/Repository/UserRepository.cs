@@ -20,16 +20,6 @@ namespace WebApplication1.Repository
         {
             var procedureName = "sp_AddUserInformation";
 
-            //var path = "wwwroot\\";
-            //var fileName = "";
-            //string[] files = Directory.GetFiles(path);
-            //foreach (string file in files)
-            //{
-            //    fileName =  Path.GetFileName(file);
-            //}
-                 
-
-
             var parameters = new DynamicParameters(user);
             parameters.Add("id", user.id, DbType.String);
             parameters.Add("name", user.name, DbType.String);
