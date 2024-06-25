@@ -12,6 +12,7 @@ namespace WebApplication1.Controllers
     {
         private readonly IUserService _userService;
         private readonly IUserRepository _userRepository;
+       
         public ValuesController(IUserService userService, IUserRepository userRepository)
         {
             _userService = userService;
